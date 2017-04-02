@@ -1,0 +1,64 @@
+body{
+    margin:0 auto;
+    background: url('../img/background.jpg') fixed no-repeat center center;
+}
+
+video{
+    z-index:1;
+    margin-left:20%
+}
+
+.controls{
+    background-image:-webkit-linear-gradient(top, rgba(128,128,128,100), rgba(0,0,0,100));
+    background-image:-moz-linear-gradient(top, rgba(128,128,128,100), rgba(0,0,0,100));
+    background-image: linear-gradient(top, rgba(128,128,128,100), rgba(0,0,0,100));
+    width:60%;
+    margin-left:20%;
+    margin-top: -5px;
+    position:relative;
+    z-index:2;
+    opacity: 0.9;
+}
+
+.controls div{
+    color:white;
+    padding:10px;
+    display: inline-block;
+    border-right: solid 1px grey;
+}
+
+@media screen and (max-width: 600px){
+    .controls div{
+        font-size: 0.35em;
+    }
+}
+
+.controls div:hover{
+    background-image:-webkit-linear-gradient(top, rgba(0,0,0,100), rgba(128,128,128,100));
+    background-image:-moz-linear-gradient(top, rgba(0,0,0,100), rgba(128,128,128,100));
+    background-image: linear-gradient(top, rgba(0,0,0,100), rgba(128,128,128,100));
+    cursor:pointer;
+}
+
+#duration{
+    width:100%;
+    background-color:grey;
+    padding:0;
+    height:10px
+}
+
+#duration:hover, #currenttime:hover{
+    background-image:none;
+}
+
+#currenttime{
+    background-color:red;
+    padding:0;
+    height:10px
+}
+
+#buttonNavigate{
+    margin-top:50px;
+    width:65%;
+    margin-left:17.5%
+}
